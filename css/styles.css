@@ -400,50 +400,31 @@ footer{
     font-weight:300;
     color:#374054
 }
-#education{
+#interests{
     padding:50px 15px 20px 15px;
     border-bottom:1px solid #dcd9d9;
     text-align:center
 }
-#education h2{
+#interests h2{
     color:#374054;
     margin-bottom:50px
 }
-.education-block{
-    max-width: 800px;
-    box-shadow: 5px 10px 18px lightblue;
-    margin:0 auto 30px auto;
-    padding:15px;
-    border:1px solid #dcd9d9;
-    text-align:left
+#interests ul{
+    display:block;
+    margin:0 auto;
+    padding:0;
+    max-width:800px
 }
-.education-block h3{
-    font-weight:500;
-    float:left;
-    margin:0;
-    color:#374054
-}
-.education-block span{
-    color:#74808a;
-    float:right
-}
-.education-block h4{
-    color:#74808a;
-    clear:both;
-    font-weight:700;
-    margin:0 0 15px 0
-}
-.education-block p,.education-block ul{
-    margin:0;color:#74808a;font-size:0.9em
-}
-.education-block ul{
-    padding:0 0 0 15px
-    list-style: none;
-}
-.education-block ul li {
-    display: inline;
-    padding: 0 10px;
-}
+#interests li{
+     display:inline-block;
+     margin:7px;
+     padding:5px 10px;
+     color:#374054;
+     background:#e4e4ea;
+     list-style:none;
+     cursor:default;
+     font-size:1.2em
+ }
 #projects{
     padding:50px 15px;
     border-bottom:1px solid #dcd9d9;
