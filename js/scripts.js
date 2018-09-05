@@ -7,8 +7,21 @@
 */
 
 (function($) {
+
+    var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
+
+    console.log(loadTime);
+
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('body').addClass('loaded');
+        }, loadTime / 1000);
+    });
+
     // Remove no-js class
     $('html').removeClass('no-js');
+
+
 
    // $('.panel').height = $('#skills').height + $('body').max
 
