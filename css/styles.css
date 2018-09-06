@@ -992,11 +992,22 @@ footer{
         top:auto;
         transform:none
     }
+
     footer{
         text-align:center
     }
     .social{
         text-align:center
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    #skills .panel .layer .content{
+        display: block;
+        text-align: center
+    }
+    #skills .panel .layer .skills-list{
+        margin-left: -35px
     }
 }
 
@@ -1010,12 +1021,5 @@ footer{
     #lead-content a{
         font-size:0.9em;
         padding:5px 10px
-    }
-    #skills .panel .layer .content{
-        display: block;
-        text-align: center
-    }
-    #skills .panel .layer .skills-list{
-        margin-left: -35px
     }
 }

@@ -101,22 +101,39 @@
         });
     });
 
-    if($('body').innerWidth() <= 480) {
-        $('.layer .pull-right').width( $('.panel').innerWidth() - $('.skills-list-item .lang-name').width() -
-                                       parseInt($('.layer .skills-list').css('margin-right')) );
+    var $window = $(window);
+    var lastWindowWidth = $window.width();
 
-        $('.panel').height( $('.layer .content p').height() +
-                            ($('ul.skills-list li').length + 2) * parseInt($('.skills-list-item').css('line-height')) );
+    $window.resize(function () {
+        /* Do not calculate the new window width twice.
+         * Do it just once and store it in a variable. */
+        var windowWidth = $window.width();
 
-        $('#skills').height( $('.panel').height() + $('.bullets il').height() * 3 );
-    }
-    else {
-        $('.layer .pull-right').width( Math.ceil($('.panel').innerWidth() / 2) -
-            $('.skills-list-item .lang-name').width() -
-            parseInt($('.layer .skills-list').css('margin-right')) -
-            parseInt($('.layer .skills-list').css('margin-left')) );
-    }
+        /* Use !== operator instead of !=. */
+        if (lastWindowWidth !== windowWidth) {
+            if($('body').innerWidth() <= 670) {
+                $('.layer .pull-right').width( $('.panel').innerWidth() - $('.skills-list-item .lang-name').width() -
+                    parseInt($('.layer .skills-list').css('margin-right')) );
 
+                $('.panel').height( $('.layer .content p').height() +
+                    ($('ul.skills-list li').length + 2) * parseInt($('.skills-list-item').css('line-height')) );
+
+                $('#skills').height( $('.panel').height() + $('.bullets il').height() * 3 );
+            }
+
+            else {
+                $('.layer .pull-right').width( Math.ceil($('.panel').innerWidth() / 2) -
+                    $('.skills-list-item .lang-name').width() -
+                    parseInt($('.layer .skills-list').css('margin-right')) -
+                    parseInt($('.layer .skills-list').css('margin-left')) );
+
+                $('.panel').height( ($('ul.skills-list li').length + 2) * parseInt($('.skills-list-item').css('line-height')) );
+                $('#skills').height( $('.panel').height() + $('.bullets il').height() * 3 );
+
+            }
+            lastWindowWidth = windowWidth;
+        }
+    });
 })(jQuery);
 
 window.panel = function( container ) {
