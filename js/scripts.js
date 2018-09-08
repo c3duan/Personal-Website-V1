@@ -134,6 +134,52 @@
             lastWindowWidth = windowWidth;
         }
     });
+
+    $(document).ready(function() {
+        if($('body').innerWidth() <= 670) {
+            $('.layer .pull-right').width( $('.panel').innerWidth() - $('.skills-list-item .lang-name').width() -
+                parseInt($('.layer .skills-list').css('margin-right')) );
+
+            $('.panel').height( $('.layer .content p').height() +
+                ($('ul.skills-list li').length + 2) * parseInt($('.skills-list-item').css('line-height')) );
+
+            $('#skills').height( $('.panel').height() + $('.bullets il').height() * 3 );
+        }
+
+        else {
+            $('.layer .pull-right').width( Math.ceil($('.panel').innerWidth() / 2) -
+                $('.skills-list-item .lang-name').width() -
+                parseInt($('.layer .skills-list').css('margin-right')) -
+                parseInt($('.layer .skills-list').css('margin-left')) );
+
+            $('.panel').height( ($('ul.skills-list li').length + 2) * parseInt($('.skills-list-item').css('line-height')) );
+            $('#skills').height( $('.panel').height() + $('.bullets il').height() * 3 );
+
+        }
+    });
+
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $('body').scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    var bars = $('.progress-bar .progress-bar-danger');
+
+    $(window).on('resize scroll', function() {
+        bars.each(function() {
+            if ($(this).isInViewport()) {
+                var barWidth = $(this).style.width;
+                console.log(barWidth);
+                $(this).animate({ width: barWidth }, 2000);
+            }
+        });
+    });
+
 })(jQuery);
 
 window.panel = function( container ) {
