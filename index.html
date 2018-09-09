@@ -585,33 +585,26 @@
             });
         });
 
-        /*
-        $(window).scroll(function() {
-            $('.layer.show').each(function() {
-                var imagePos = $(this).offset().top;
-                var imageHeight = $(this).height();
-                var topOfWindow = $(window).scrollTop();
 
-                if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-                    var classes = $('.layer.show').attr('class').split(/\s+/);
-                    var progress = $(`.${classes.slice(0, 2).join('.')} .progress-bar`);
+        // set the default show layer's progress bar animation
+        $('.layer.one.show').ready(function() {
+            var classes = $('.layer.show').attr('class').split(/\s+/);
+            var progress = $(`.${classes.slice(0, 2).join('.')} .progress-bar`);
 
-                    for (let i = 0; i < progress.length; i++) {
-                        var width = 1;
-                        var id = setInterval(frame, 10);
+            for (let i = 0; i < progress.length; i++) {
+                var width = 1;
+                var id = setInterval(frame, 10);
 
-                        function frame() {
-                            if (width > parseInt($(progress[i]).attr('progress'))) {
-                                clearInterval(id);
-                            } else {
-                                width++;
-                                $(progress[i]).attr('style', `width: ${width}%`);
-                            }
-                        }
+                function frame() {
+                    if (width > parseInt($(progress[i]).attr('progress'))) {
+                        clearInterval(id);
+                    } else {
+                        width++;
+                        $(progress[i]).attr('style', `width: ${width}%`);
                     }
                 }
-            });
-        });*/
+            }
+        });
 
 
         // automatic pagination
