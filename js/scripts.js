@@ -8,14 +8,10 @@
 
 (function($) {
 
-    var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
-
-    console.log(loadTime);
-
     $(document).ready(function() {
         setTimeout(function() {
             $('body').addClass('loaded');
-        }, loadTime / 1000);
+        }, PerformanceEntry.duration);
     });
 
     // Remove no-js class
@@ -157,29 +153,6 @@
 
         }
     });
-
-    $.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top;
-        var elementBottom = elementTop + $(this).outerHeight();
-
-        var viewportTop = $('body').scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-
-    var bars = $('.progress-bar .progress-bar-danger');
-
-    $(window).on('resize scroll', function() {
-        bars.each(function() {
-            if ($(this).isInViewport()) {
-                var barWidth = $(this).style.width;
-                console.log(barWidth);
-                $(this).animate({ width: barWidth }, 2000);
-            }
-        });
-    });
-
 })(jQuery);
 
 window.panel = function( container ) {
