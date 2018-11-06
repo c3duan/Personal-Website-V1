@@ -11,7 +11,7 @@
     $(document).ready(function() {
         setTimeout(function() {
             $('body').addClass('loaded');
-        }, PerformanceEntry.duration);
+        }, 3000);
     });
 
     // Remove no-js class
