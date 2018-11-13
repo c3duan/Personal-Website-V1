@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0d70779-b5b3-4070-b817-07e7de1a6d22" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/binary-extensions/binary-extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/binary-extensions/binary-extensions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/binary-extensions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/binary-extensions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/duplexify/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/duplexify/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/duplexify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/duplexify/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/duplexify/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/duplexify/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gulp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gulp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/examples/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/examples/callback-api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/examples/grep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/examples/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/examples/stream-api-pipe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/examples/stream-api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readdirp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/readdirp.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readdirp/readdirp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/stream-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readdirp/stream-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_dir1/root_dir1_file1.ext1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_dir1/root_dir1_file2.ext2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_dir1/root_dir1_file3.ext3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_dir1/root_dir1_subdir1/root1_dir1_subdir1_file1.ext1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_dir2/root_dir2_file1.ext1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_dir2/root_dir2_file2.ext2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_file1.ext1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_file2.ext2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/bed/root_file3.ext3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/readdirp-stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/test/readdirp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/set-immediate-shim/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/set-immediate-shim/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="a0d70779-b5b3-4070-b817-07e7de1a6d22" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -50,7 +15,7 @@
     <session id="939574084">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.26" value="1" />
@@ -75,6 +40,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open" />
       <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -229,7 +195,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="48" />
+    <option name="x" value="230" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="752" />
   </component>
@@ -299,12 +266,12 @@
       <workItem from="1536226454159" duration="11757000" />
       <workItem from="1536421300185" duration="10244000" />
       <workItem from="1536476929988" duration="564000" />
-      <workItem from="1541538993320" duration="142000" />
+      <workItem from="1541538993320" duration="808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59111000" />
+    <option name="totallyTimeSpent" value="59777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -316,8 +283,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="48" width="1280" height="752" extended-state="0" />
-    <editor active="true" />
+    <frame x="230" y="23" width="1280" height="752" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21286735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -332,8 +298,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49642575" visible="true" weight="0.3478261" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50357425" side_tool="true" visible="true" weight="0.3478261" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49642575" visible="true" weight="0.3478261" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50357425" side_tool="true" visible="true" weight="0.3478261" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32991454" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
