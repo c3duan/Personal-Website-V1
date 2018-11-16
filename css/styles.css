@@ -503,6 +503,7 @@ footer{
     list-style:none;
     font-size: 12px;
     padding: 2px;
+    border-radius: 3px;
     margin-bottom: 0;
     display:flex;
     justify-content: center;
