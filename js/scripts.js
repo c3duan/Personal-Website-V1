@@ -65,9 +65,9 @@
         });
 
         // Add icons to each block
-        $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
-        });
+        $($this.find('.vtimeline-point')[0]).prepend('<div class="vtimeline-icon"><a href="https://www.chinamcloud.com/" target="blank"><img src="./images/chinamcloud.png" alt="Avatar" style="margin: 5%; width: 88%; border-radius:50%"></div>');
+        $($this.find('.vtimeline-point')[1]).prepend('<div class="vtimeline-icon"><a href="https://tritonse.github.io/" taget="blank"><img src="./images/tse.png" alt="Avatar" style="margin: 5%; width: 88%; border-radius: 50%"></div>');
+        $($this.find('.vtimeline-point')[2]).prepend('<div class="vtimeline-icon"><a href="http://www.cn1win.com/index.html" taget="blank"><img src="./images/cn1win.png" alt="Avatar" style="margin: 5%; width: 88%; border-radius: 50%"></div>');
 
         // Add dates to the timeline if exists
         $this.find('.vtimeline-content').each(function() {
