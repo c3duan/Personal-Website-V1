@@ -991,7 +991,15 @@ footer{
         border-radius:0;width:100%
     }
     #menu li{
-        display:block;margin-bottom:10px
+        display:block;
+        margin-bottom:10px
+    }
+    .content-skills {
+        display: inline-block;
+        width: 100%;
+    }
+    .content-skills li{
+        display: block;
     }
     #lead-content h1{
         font-size:2em
