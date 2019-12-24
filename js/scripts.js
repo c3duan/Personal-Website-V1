@@ -1,5 +1,5 @@
 /*!
-    Last Change: 06/10/2018
+    Last Change: 12/24/2019
     Author: Chengzhu Duan
 
     Description: This file contains all the scripts associated with the single-page
